@@ -26,24 +26,24 @@
     "prepublish": "grunt test"
   },
   "dependencies": {
-    "liquid-node": "~2.0.0"
+    "liquid-node": "~2.6.1"
   },
   "devDependencies": {
-    "grunt-contrib-jshint": "~0.2.0",
-    "grunt-contrib-nodeunit": "~0.1.2",
-    "grunt-contrib-clean": "~0.4.0",
-    "grunt-contrib-internal": "~0.4.2",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-nodeunit": "^1.0.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-internal": "^1.2.1",
     "q": ">= 0.8.12",
-    "grunt": "~0.4.0",
-    "minimatch": "~0.2.12",
-    "grunt-contrib-coffee": "^0.10.1",
-    "coffee": "~1.0.0",
+    "grunt": "^1.0.1",
+    "minimatch": "^3.0.0",
+    "grunt-contrib-coffee": "^1.0.0",
+    "coffee": "^3.2.1",
     "grunt-run-grunt": "^0.1.4",
-    "grunt-coffeelint": "0.0.8"
+    "grunt-coffeelint": "^0.0.15"
   },
   "peerDependencies": {
     "q": ">= 0.8.12",
-    "grunt": ">=0.4.0"
+    "grunt": "^1.0.1"
   },
   "keywords": [
     "gruntplugin"
