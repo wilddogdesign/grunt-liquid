@@ -21,9 +21,12 @@ module.exports = (grunt) ->
 
     @files.forEach (fp) ->
       srcFiles = fp.src
+
       content = grunt.file.read(srcFiles)
-      ext = path.extname(srcFiles)
-      dir = path.dirname(fp.src)
+
+      newpath = if Array.isArray fp.src then fp.src[0] else fp.src
+      ext = path.extname(newpath)
+      dir = path.dirname(newpath)
 
       parsePromise = engine.extParse content, (subFilepath, cb) ->
         includes = options.includes
