@@ -19,15 +19,14 @@ module.exports = function(grunt) {
         jshintrc: '.jshintrc'
       }
     },
-    
+
     coffeelint: {
       all: ["src/**/*.coffee"]
     },
-    
+
     coffee: {
       compile: {
         files: {
-          "tasks/index.js": "src/index.coffee",
           "tasks/lib/liquid-ext.js": "src/lib/liquid-ext.coffee"
         }
       }
@@ -58,10 +57,10 @@ module.exports = function(grunt) {
 
   grunt.registerTask('lint', ['coffeelint', 'jshint']);
   // grunt.hideTask('lint');
-  
+
   grunt.registerTask('compile', ['clean', 'coffee']);
   // grunt.hideTask('compile');
-  
+
   grunt.registerTask('test', ['compile', 'lint', 'run_grunt:liquid', 'nodeunit']);
   grunt.registerTask('default', ['test']);
 };
